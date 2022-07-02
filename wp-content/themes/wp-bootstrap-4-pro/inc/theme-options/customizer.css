@@ -1,0 +1,17 @@
+.wp-bp-region-title {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.wp-bp-region-title.first-region-title {
+    margin-top: 0px;
+}
+
+#customize-control-frontpage_cover_bg_img .background-color,
+#customize-control-frontpage_cover_bg_img .background-repeat,
+#customize-control-frontpage_cover_bg_img .background-position,
+#customize-control-frontpage_cover_bg_img .background-size,
+#customize-control-frontpage_cover_bg_img .background-attachment,
+#customize-control-frontpage_cover_bg_img .background-image h4 {
+    display: none !important;
+}
