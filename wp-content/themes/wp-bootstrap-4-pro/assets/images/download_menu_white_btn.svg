@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="517" height="147" viewBox="0 0 517 147">
+  <g id="Group_288" data-name="Group 288" transform="translate(-701.5 -808.278)">
+    <g id="Group_195" data-name="Group 195" transform="translate(0 -160)">
+      <g id="Group_186" data-name="Group 186" transform="translate(0 -1864.754)">
+        <g id="Path_178" data-name="Path 178" transform="translate(708.413 2833.031)" fill="none">
+          <path d="M73.5,0H429.673a73.5,73.5,0,0,1,0,147H73.5a73.5,73.5,0,0,1,0-147Z" stroke="none"/>
+          <path d="M 73.5 6 C 36.28036499023438 6 6 36.28035736083984 6 73.5 C 6 110.7196426391602 36.28036499023438 141 73.5 141 L 429.6728515625 141 C 466.8924865722656 141 497.1728515625 110.7196426391602 497.1728515625 73.5 C 497.1728515625 36.28035736083984 466.8924865722656 6 429.6728515625 6 L 73.5 6 M 73.5 0 L 429.6728515625 0 C 470.2657775878906 0 503.1728515625 32.90707397460938 503.1728515625 73.5 C 503.1728515625 114.0929260253906 470.2657775878906 147 429.6728515625 147 L 73.5 147 C 32.90707397460938 147 0 114.0929260253906 0 73.5 C 0 32.90707397460938 32.90707397460938 0 73.5 0 Z" stroke="none" fill="#fff"/>
+        </g>
+        <text id="Download_Menu" data-name="Download Menu" transform="translate(701.5 2883.531)" fill="#fff" font-size="40" font-family="Paralucent-Bold, Paralucent" font-weight="700" letter-spacing="0.08em"><tspan x="75" y="38">Download Menu</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,20 +1,20 @@
 <?php
 /*
-  Template Name: Home Page
+  Template Name: Menu
  */
 
-get_header('homepage');
-get_template_part( 'template-parts/front-page/banner' );
+get_header('default');
+get_template_part( 'template-parts/default/banner' );
 
 ?>
 
 <?php if ( get_theme_mod( 'show_main_content', 1 ) ) : ?>
- <!-- Signature Boba Section -->
+ <!-- This Month Pick Section -->
 <section class="wp-bp-main-content signature-boba">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center signature-boba-row">
             <div class="col-md-12">
-                <h1 class="text-center mb-4 header">Signature Boba</h1>
+                <h1 class="text-center mb-4 header">This Months Picks!</h1>
                 <p class="mb-0 text-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
                 </p>
@@ -51,48 +51,8 @@ get_template_part( 'template-parts/front-page/banner' );
         </div>
     </div>
 </section>
-
-<!-- Waffles Section -->
-<section class="wp-bp-main-content waffles">
-    <div class="container">
-        <div class="row justify-content-center waffles-row">
-            <div class="col-md-12">
-                <h1 class="text-center mb-4 header">Delicious Waffles</h1>
-                <p class="mb-0 text-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
-            </div>
-        </div>
-        <div class="row justify-content-center waffles-row waffles-items">
-            <div class="col-md-4">
-                <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
-                <p class="mb-0 text-desc text-center">
-                    <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_69_bq.png" alt="boba-signature"/>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p class="mb-0 text-desc text-center">
-                    <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_69_bq.png" alt="boba-signature"/>
-                </p>
-                <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
-            </div>
-            <div class="col-md-4">
-                <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
-                <p class="mb-0 text-desc text-center">
-                    <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_69_bq.png" alt="boba-signature"/>
-                </p>
-            </div>
-        </div>
-        <div class="row justify-content-center waffles-row">
-            <p class="mb-0 see-menu-btn text-center">
-                <a href="#" target="_blank" class="btn-link">
-                    <img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/waffle_menu_btn.svg'); ?>" alt="See waffles Menu button" />
-                </a>
-            </p>
-        </div>
-    </div>
-</section>
 <!-- Order Online Section -->
-<section class="wp-bp-main-content order-online">
+<section class="wp-bp-main-content page-menu order-online">
     <div class="container">
         <div class="row justify-content-center order-online-row">
             <div class="col-md-12">
@@ -131,16 +91,6 @@ get_template_part( 'template-parts/front-page/banner' );
                         <img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/doordash_btn.svg'); ?>" alt="doordash Menu button" />
                     </a>
                 </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- pobbatee store image Section -->
-<section class="wp-bp-main-content pobbatee-store-image p-0">
-    <div class="container-fluid">
-        <div class="row justify-content-center pobbatee-store-image-row">
-            <div class="col-md-12 p-0">
-                <img  class="d-block w-100" src="http://popbatee.test/wp-content/uploads/2022/07/Image_18.png" alt="boba store image"/>
             </div>
         </div>
     </div>

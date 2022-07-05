@@ -28,7 +28,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-menu-wrap" aria-controls="primary-menu-wrap" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <?php get_template_part( 'template-parts/front-page/main-navigation' ); ?>
+                <?php get_template_part( 'template-parts/default/main-navigation' ); ?>
 			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

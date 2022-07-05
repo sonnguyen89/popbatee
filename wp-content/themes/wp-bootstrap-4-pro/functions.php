@@ -30,7 +30,8 @@ if ( ! function_exists( 'wp_bootstrap_4_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'wp-bootstrap-4' ),
+			'menu-2' => esc_html__( 'Primary right', 'wp-bootstrap-4' ),
+			'menu-1' => esc_html__( 'Primary left', 'wp-bootstrap-4' ),
 		) );
 
 		// Switch default core markup for search form, comment form, and comments
