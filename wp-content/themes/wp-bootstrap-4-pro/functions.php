@@ -210,3 +210,151 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'wp-bootstrap-4-pro'
 );
+
+
+// customize the theme
+
+function bopa_menu_item_type() {
+
+    $args = array(
+        'labels' => array(
+            'name' => 'Menu Items',
+            'menu_name' => 'Menu Item',
+            'singular_name' => 'Menu Item',
+            'add_new_item' => 'New Menu Item',
+            'edit_item' => 'Edit Menu Item',
+            'update_item' => 'Update Menu Item',
+            'add_new' => 'Add New Menu Item'
+        ),
+        'hierarchical' => true,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-food',
+        'supports' => array('title','editor','thumbnail')
+    );
+    register_post_type('menu_items',$args);
+}
+function bopa_menu_item_taxonomoy() {
+    $args = array(
+        'labels' => array(
+            'name' => 'Groups',
+            'singular_name' => 'Group'
+        ),
+        'public' => true,
+        'hierarchical' =>  true,
+    );
+    register_taxonomy('groups', array('menu_items'),$args);
+}
+
+function bopa_store_type() {
+
+    $args = array(
+        'labels' => array(
+            'name' => 'Stores',
+            'singular_name' => 'Store',
+        ),
+        'hierarchical' => true,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-store',
+        'supports' => array('title','editor','thumbnail')
+    );
+    register_post_type('stores',$args);
+}
+function bopa_store_state_taxonomoy() {
+    $args = array(
+        'labels' => array(
+            'name' => 'States',
+            'singular_name' => 'State'
+        ),
+        'public' => true,
+        'hierarchical' =>  true,
+    );
+    register_taxonomy('states', array('stores'),$args);
+}
+
+
+add_action('init','bopa_menu_item_type');
+add_action('init','bopa_menu_item_taxonomoy');
+add_action('init','bopa_store_type');
+add_action('init','bopa_store_state_taxonomoy');
+
+/**
+ * https://gist.github.com/mtx-z/f95af6cc6fb562eb1a1540ca715ed928
+ * @param WP_Query|null $wp_query
+ * @param bool $echo
+ * @param array $params
+ *
+ * @return string|null
+ *
+ * UPDATE for Bootstrap 5.0: https://gist.github.com/mtx-z/af85d3abd4c19a84a9713e69956e1507
+ *
+ * Accepts a WP_Query instance to build pagination (for custom wp_query()),
+ * or nothing to use the current global $wp_query (eg: taxonomy term page)
+ * - Tested on WP 5.7.1
+ * - Tested with Bootstrap 4.4
+ * - Tested on Sage 9.0.9
+ *
+ * INSTALLATION:
+ * add this file content to your theme function.php or equivalent
+ *
+ * USAGE:
+ *     <?php echo bootstrap_pagination(); ?> //uses global $wp_query
+ * or with custom WP_Query():
+ *     <?php
+ *      $query = new \WP_Query($args);
+ *       ... while(have_posts()), $query->posts stuff ... endwhile() ...
+ *       echo bootstrap_pagination($query);
+ *     ?>
+ */
+function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true, $params = [] ) {
+    if ( null === $wp_query ) {
+        global $wp_query;
+    }
+
+    $add_args = [];
+
+    //add query (GET) parameters to generated page URLs
+    /*if (isset($_GET[ 'sort' ])) {
+        $add_args[ 'sort' ] = (string)$_GET[ 'sort' ];
+    }*/
+
+    $pages = paginate_links( array_merge( [
+            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+            'format'       => '?paged=%#%',
+            'current'      => max( 1, get_query_var( 'paged' ) ),
+            'total'        => $wp_query->max_num_pages,
+            'type'         => 'array',
+            'show_all'     => false,
+            'end_size'     => 3,
+            'mid_size'     => 1,
+            'prev_next'    => true,
+            'prev_text'    => __( '« Prev' ),
+            'next_text'    => __( 'Next »' ),
+            'add_args'     => $add_args,
+            'add_fragment' => ''
+        ], $params )
+    );
+
+    if ( is_array( $pages ) ) {
+        //$current_page = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
+        $pagination = '<ul class="pagination justify-content-center">';
+
+        foreach ( $pages as $page ) {
+            $pagination .= '<li class="page-item' . (strpos($page, 'current') !== false ? ' active' : '') . '"> ' . str_replace('page-numbers', 'page-link', $page) . '</li>';
+        }
+
+        $pagination .= '</ul>';
+
+        if ( $echo ) {
+            echo $pagination;
+        } else {
+            return $pagination;
+        }
+    }
+
+    return null;
+}
+
+
+?>

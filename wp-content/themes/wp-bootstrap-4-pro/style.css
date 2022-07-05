@@ -567,3 +567,29 @@ section.footer-widgets {
   background-repeat: no-repeat;
   padding: 14rem 0 4rem;
 }
+
+.page-template .list-menu-item-1 {
+  background-color: rgba(255,234,214,1);
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+.page-template .list-menu-item-2 {
+  background-color: rgba(249,199,159,1);
+  padding-top: 112px;
+  padding-bottom: 0;
+}
+.page-template .list-menu-item-1 .list-menu-item-1-row .header,
+.page-template .list-menu-item-2 .list-menu-item-2-row .header {
+  text-align: center;
+  font-family: Proxima Soft;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  color: rgba(69,40,36,1);
+}
+.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img,
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
+  overflow: hidden;
+  border: 15px solid #ffffff;
+  border-radius: 100px;
+}
