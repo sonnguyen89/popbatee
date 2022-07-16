@@ -219,9 +219,9 @@ function bopa_menu_item_type() {
     $args = array(
         'labels' => array(
             'name' => 'Menu Items',
-            'menu_name' => 'Menu Item',
+            'menu_name' => 'Menu Items',
             'singular_name' => 'Menu Item',
-            'add_new_item' => 'New Menu Item',
+            'add_new_item' => 'Add New Menu Item',
             'edit_item' => 'Edit Menu Item',
             'update_item' => 'Update Menu Item',
             'add_new' => 'Add New Menu Item'
@@ -307,12 +307,12 @@ add_action('init','bopa_store_state_taxonomoy');
  *       echo bootstrap_pagination($query);
  *     ?>
  */
-function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true, $params = [] ) {
+function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true, $params = [], $add_args = [] ) {
     if ( null === $wp_query ) {
         global $wp_query;
     }
 
-    $add_args = [];
+    // $add_args = [];
 
     //add query (GET) parameters to generated page URLs
     /*if (isset($_GET[ 'sort' ])) {

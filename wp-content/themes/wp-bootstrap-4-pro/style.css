@@ -587,9 +587,39 @@ section.footer-widgets {
   font-size: 90px;
   color: rgba(69,40,36,1);
 }
-.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img,
-.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
+
+.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item .desc,
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item .desc {
+  line-height: 40px;
+  text-align: left;
+  font-family: Proxima Soft;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 35px;
+  color: rgba(69,40,36,1);
+  letter-spacing: 0.2px;
+}
+.page-template .list-menu-item-1 .list-menu-item-1-row  .menu-item .price,
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item .price {
+  text-align: left;
+  font-family: Paralucent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: rgba(69,40,36,1);
+  letter-spacing: 0.3px;
+}
+
+.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image,
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image {
   overflow: hidden;
   border: 15px solid #ffffff;
   border-radius: 100px;
+  display: inline-block;
+}
+.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img {
+  height: 416px;
+}
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
+  height:440px;
 }
