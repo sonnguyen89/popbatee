@@ -40,6 +40,7 @@ get_template_part('template-parts/location/banner');
                                      <?php $states_term = get_terms( 'states',array(
                                          'hide_empty' => true,
                                      )); ?>
+                                    <a class="dropdown-item state-item" href="#" term-name="all" >All</a>
                                     <?php foreach($states_term as $term): ?>
                                         <a class="dropdown-item state-item" href="#" term-name="<?php echo $term->name; ?>" ><?php echo $term->name; ?></a>
                                     <?php endforeach; ?>
@@ -201,14 +202,23 @@ get_footer('custom');
             $("#boba-store-item-list .boba-store-item").filter(function () {
                 $(this).toggle($(this).attr('data-postcode').toLowerCase().indexOf(value) > -1);
             });
+            //reset other filter
+            $("#state-filter-input #statesDropdown").html('State');
         });
         $("#state-filter-input .state-item").on("click", function(e) {
             e.preventDefault();
             var value = $(this).attr('term-name').toLowerCase();
             $("#state-filter-input #statesDropdown").html($(this).attr('term-name'));
             $("#boba-store-item-list .boba-store-item").filter(function () {
-                $(this).toggle($(this).attr('data-state').toLowerCase().indexOf(value) > -1);
+                if(value !== 'all') {
+                    $(this).toggle($(this).attr('data-state').toLowerCase().indexOf(value) > -1);
+                } else {
+                    $(this).toggle($(this).attr('data-state'));
+                    $("#state-filter-input #statesDropdown").html('State');
+                }
             });
+            //reset other filter
+            $("#postcode-filter-input").val('');
         });
     });
 </script>
