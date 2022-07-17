@@ -149,6 +149,7 @@ function wp_bootstrap_4_scripts() {
 	wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v4.0.0', 'all' );
 	wp_enqueue_style( 'wp-bootstrap-4-style', get_stylesheet_uri(), array(), '1.0.2', 'all' );
 
+    wp_enqueue_script( 'popper-js', get_template_directory_uri() . '/assets/js/popper.min.js', array('jquery'), 'v1.11.0', true );
 	wp_enqueue_script( 'bootstrap-4-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), 'v4.0.0', true );
 	wp_enqueue_script( 'wp-bootstrap-4-theme', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), '1.0.5', true );
 
@@ -252,6 +253,11 @@ function bopa_store_type() {
         'labels' => array(
             'name' => 'Stores',
             'singular_name' => 'Store',
+            'menu_name' => 'Stores',
+            'add_new_item' => 'Add New Store',
+            'edit_item' => 'Edit Store',
+            'update_item' => 'Update Store',
+            'add_new' => 'Add New Store'
         ),
         'hierarchical' => true,
         'public' => true,

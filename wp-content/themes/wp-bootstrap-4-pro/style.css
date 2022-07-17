@@ -392,7 +392,8 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
   background-size: cover;
 }
 .page-template .waffles-row h1.header,
-.page-template .signature-boba-row h1.header {
+.page-template .signature-boba-row h1.header,
+.page-template .boba-store-row h1.header {
   font-family: Proxima Soft;
   font-style: normal;
   font-weight: bold;
@@ -404,7 +405,8 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
 }
 
 .page-template .waffles-row p.text-desc,
-.page-template .signature-boba-row p.text-desc {
+.page-template .signature-boba-row p.text-desc,
+.page-template .boba-store-row p.text-desc {
   font-family: Proxima Soft;
   font-style: normal;
   font-weight: normal;
@@ -419,7 +421,8 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
 
 
 .page-template .waffles-row.waffles-items h3.item-desc,
-.page-template .signature-boba-row.signature-boba-items h3.item-desc {
+.page-template .signature-boba-row.signature-boba-items h3.item-desc,
+.page-template .boba-store-row h3.item-desc {
   text-align: center;
   font-family: Proxima Soft;
   font-style: normal;
@@ -550,7 +553,7 @@ section.footer-widgets {
   font-family: Proxima Soft;
   font-style: normal;
   font-weight: bold;
-  font-size: 120px;
+  font-size: 6vw;
   color: rgba(255,255,255,1);
 }
 .page-template .page-default-banner p.page-desc {
@@ -622,4 +625,91 @@ section.footer-widgets {
 }
 .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
   height:440px;
+}
+/********* location template ***********/
+.page-template.page-template-page-template-location .page-menu.order-online {
+  background-color: #f9c79f;
+  background-image: none;
+}
+.page-template.page-template-page-template-location  .wp-bp-main-content.find-boba-store {
+  background-color: rgba(255,234,214,1);
+}
+
+.page-template.page-template-page-template-location .boba-store-row  {
+
+}
+
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item-image {
+  overflow: hidden;
+  border: 15px solid #ffffff;
+  border-radius: 100px;
+  display: inline-block;
+}
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item-image img {
+  height: 736px;
+}
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .header {
+  text-align: left;
+  font-family: Proxima Soft;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(83,52,31,1);
+}
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .street-address {
+  text-align: left;
+  font-family: Proxima Soft;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 35px;
+  color: rgba(69,40,36,1);
+  letter-spacing: 0.6px;
+  line-height: 40px;
+}
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .field-label
+{
+  line-height: 45px;
+  text-align: left;
+  font-family: Proxima Soft;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: rgba(85,54,33,1);
+  letter-spacing: 0.6px;
+}
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .field-value
+{
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 35px;
+  color: rgba(85,54,33,1);
+  letter-spacing: 0.6px;
+  text-align: left;
+  font-family: Proxima Soft;
+}
+
+.page-template.page-template-page-template-location .boba-store-row .sort-by-label {
+  text-align: left;
+  font-family: Proxima Soft;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 40px;
+  color: rgba(85,54,33,1);
+  letter-spacing: 0.6px;
+}
+.page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  right: 9px;
+  top: 16px;
+
 }
