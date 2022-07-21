@@ -747,7 +747,37 @@ section.footer-widgets {
   background-color: rgba(255,234,214,1);
   padding-bottom: 0;
 }
-/********* Franchise template ----- END ***********/
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form .form-label {
+  text-align: left;
+  font: 30px Paralucent;
+  letter-spacing: 0.9px;
+  color: #553621;
+}
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  input.first-name,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  input.last-name,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  input.email,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  input.phone,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  input.city,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  input.state,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form  textarea.message {
+  background: #F8F8F8 0 0 no-repeat padding-box;
+  border-radius: 50px;
+  border: none;
+  margin: 10px 0 0;
+  height: 50px;
+}
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form .wpcf7-submit {
+  background: #452824 0 0 no-repeat padding-box;
+  border-radius: 115px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3.2px;
+  color: #FFFFFF;
+  border:none;
+  width: 250px;
+  height: 70px;
+}
+  /********* Franchise template ----- END ***********/
 /********* Join template ***********/
 .page-template.page-template-page-template-join .wp-bp-main-content.boba-join-us-form {
   background-color: rgba(255,234,214,1);
@@ -779,5 +809,33 @@ section.footer-widgets {
 .page-template.page-template-page-template-join .site-footer {
   background-color: rgba(255,234,214,1);
   padding-bottom: 0;
+}
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form .form-label {
+  text-align: left;
+  font: 30px Paralucent;
+  letter-spacing: 0.9px;
+  color: #553621;
+}
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form input.first-name,
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form input.last-name,
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form input.email,
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form input.phone,
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form textarea.message {
+  background: #F8F8F8 0 0 no-repeat padding-box;
+  border-radius: 50px;
+  border: none;
+  margin: 10px 0 0;
+  height: 50px;
+}
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form .wpcf7-submit {
+  background: #452824 0 0 no-repeat padding-box;
+  border-radius: 115px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3.2px;
+  color: #FFFFFF;
+  border:none;
+  width: 250px;
+  height: 70px;
 }
 /********* Join template ----- END ***********/

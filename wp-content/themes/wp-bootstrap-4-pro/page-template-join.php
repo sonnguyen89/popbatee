@@ -20,6 +20,12 @@ get_template_part('template-parts/join/banner');
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
                         ultrices
                     </p>
+                    <p class="text-center mb-2 header">
+                        Join Us Today!
+                    </p>
+                    <p class="mb-0 text-desc text-center">
+                        <?php echo do_shortcode("[contact-form-7 id='104' title='Work With Us!']"); ?>
+                    </p>
                 </div>
             </div>
         </div>
