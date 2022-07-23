@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="475.002" height="105.641" viewBox="0 0 475.002 105.641">
+  <g id="Group_234" data-name="Group 234" transform="translate(-477.415 -4018.911)">
+    <g id="Group_233" data-name="Group 233" transform="translate(477.415 4018.911)">
+      <g id="Rectangle_70" data-name="Rectangle 70" fill="none" stroke="#452824" stroke-linejoin="round" stroke-width="6">
+        <rect width="474.545" height="105.641" rx="52.82" stroke="none"/>
+        <rect x="3" y="3" width="468.545" height="99.641" rx="49.82" fill="none"/>
+      </g>
+      <text id="Upload_Resume" data-name="Upload Resume" transform="translate(0.002 28.82)" fill="#452824" font-size="40" font-family="Paralucent-Medium, Paralucent" font-weight="500" letter-spacing="0.03em"><tspan x="85" y="38">Upload Resume</tspan></text>
+    </g>
+  </g>
+</svg>

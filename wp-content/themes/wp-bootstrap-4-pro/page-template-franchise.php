@@ -35,3 +35,11 @@ get_template_part('template-parts/franchise/banner');
 <?php
 get_footer('custom');
 ?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        $(".boba-franchise-form-row .wpcf7 .message-input #message").attr('rows',10);
+    });
+</script>
+
