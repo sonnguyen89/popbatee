@@ -1,15 +1,20 @@
-jQuery(document).ready(function(jQuery) {
+jQuery(document).ready(function($) {
 
     "use strict";
 
     // For changing body class on scroll
-    jQuery(window).on("scroll resize", function() {
-        if (jQuery(window).scrollTop() >= 250) {
-            jQuery("body.wb-bp-front-page.trans-header").addClass("body-scrolled");
+    $(window).on("scroll resize", function() {
+        if ($(window).scrollTop() >= 250) {
+            $("body.wb-bp-front-page.trans-header").addClass("body-scrolled");
         }
         else {
-            return jQuery("body.wb-bp-front-page.trans-header").removeClass("body-scrolled");
+            return $("body.wb-bp-front-page.trans-header").removeClass("body-scrolled");
         }
+    });
+
+
+    $(".navbar-toggler").on('click',function(){
+        $(".page-template .site-header .navbar").toggleClass('bg-white');
     });
 
 

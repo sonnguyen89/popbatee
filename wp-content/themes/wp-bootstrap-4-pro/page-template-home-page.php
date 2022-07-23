@@ -26,21 +26,24 @@ get_template_part( 'template-parts/front-page/banner' );
                 <p class="mb-0 text-desc text-center">
                     <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_9_df.png" alt="boba-signature"/>
                 </p>
+                <h3 class="text-center mb-4 item-desc mobile">Lorem ipsum</h3>
             </div>
             <div class="col-md-4">
                 <p class="mb-0 text-desc text-center">
                     <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_9_df.png" alt="boba-signature"/>
                 </p>
                 <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
+                <h3 class="text-center mb-4 item-desc mobile">Lorem ipsum</h3>
             </div>
             <div class="col-md-4">
                 <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
                 <p class="mb-0 text-desc text-center">
                     <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_9_df.png" alt="boba-signature"/>
                 </p>
+                <h3 class="text-center mb-4 item-desc mobile">Lorem ipsum</h3>
             </div>
         </div>
-        <div class="row justify-content-center signature-row">
+        <div class="row justify-content-center signature-boba-row">
             <div class="col-md-12">
                 <p class="see-menu-btn text-center">
                     <a href="#" target="_blank" class="btn-link">
@@ -68,18 +71,21 @@ get_template_part( 'template-parts/front-page/banner' );
                 <p class="mb-0 text-desc text-center">
                     <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_69_bq.png" alt="boba-signature"/>
                 </p>
+                <h3 class="text-center mb-4 item-desc mobile">Lorem ipsum</h3>
             </div>
             <div class="col-md-4">
                 <p class="mb-0 text-desc text-center">
                     <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_69_bq.png" alt="boba-signature"/>
                 </p>
                 <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
+                <h3 class="text-center mb-4 item-desc mobile">Lorem ipsum</h3>
             </div>
             <div class="col-md-4">
                 <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
                 <p class="mb-0 text-desc text-center">
                     <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_69_bq.png" alt="boba-signature"/>
                 </p>
+                <h3 class="text-center mb-4 item-desc mobile">Lorem ipsum</h3>
             </div>
         </div>
         <div class="row justify-content-center waffles-row">

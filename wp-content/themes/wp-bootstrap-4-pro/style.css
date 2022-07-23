@@ -785,8 +785,10 @@ select {
     display: none;
 }
 
-.navbar-toggler {
-    background-color: #343a40;
+#site-navigation .navbar-toggler {
+    background-color: #ffb1a7;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fff;
 }
 
 .site-header { /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
@@ -814,7 +816,7 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     padding: 120px 0 0;
     background-size: cover;
     background-position: center;
-    background-color: #FEF6F1;
+    background-color: #ffb1a7;
     border-radius: 0;
 }
 
@@ -929,9 +931,13 @@ body.custom-background .wp-bp-main-content .col-md-8 {
 /*--------------------------------------------------------------
 # Custom Queries
 --------------------------------------------------------------*/
+.page-template .site-header .mobile-logo {
+    display: none;
+}
+
 /********* Homepage and Menu template ***********/
 .page-template .site-header .navbar {
-    background-color: #ffb1a7 !important;
+    background-color: #ffb1a7;
     background-image: url("/wp-content/themes/wp-bootstrap-4-pro/assets/images/menu_bg.svg");
     background-size: cover;
     background-position: bottom 4rem right 0;
@@ -969,12 +975,12 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 4.6875vw;
     color: rgba(83, 52, 31, 1);
 }
 
 .page-template .waffles-row h1.header {
-    margin-top: 150px;
+    margin-top: 7.81vw;
 }
 
 .page-template .waffles-row p.text-desc,
@@ -983,7 +989,7 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 2.34375vw;
     color: rgba(85, 54, 33, 1);
 }
 
@@ -1001,9 +1007,13 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2.60vw;
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.8px;
+}
+.page-template .waffles-row.waffles-items h3.item-desc.mobile,
+.page-template .signature-boba-row.signature-boba-items h3.item-desc.mobile {
+    display: none;
 }
 
 .page-template .signature-boba-row p.see-menu-btn .btn-link,
@@ -1020,17 +1030,17 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 4.68vw;
     color: rgba(69, 40, 36, 1);
 }
 
 .page-template .order-online .order-online-row .text-desc {
-    line-height: 60px;
+    line-height: 3.125vw;
     text-align: center;
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 2.34vw;
     color: rgba(85, 54, 33, 1);
 }
 
@@ -1054,17 +1064,17 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 4.68vw;
     color: rgba(69, 40, 36, 1);
 }
 
 .page-template .franchise .franchise-row .text-desc {
-    line-height: 60px;
+    line-height: 3.125vw;
     text-align: center;
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 2.34vw;
     color: rgba(85, 54, 33, 1);
 }
 
@@ -1152,7 +1162,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 2.34vw;
 }
 
 .page-template .page-menu.order-online {
@@ -1181,18 +1191,25 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 4.68vw;
     color: rgba(69, 40, 36, 1);
+}
+
+.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item h3,
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item h3 {
+    font-size: 1.82vw;
+    color: #452824;
+    font-weight: bold;
 }
 
 .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item .desc,
 .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item .desc {
-    line-height: 40px;
+    line-height: 2.08vw;
     text-align: left;
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 1.82vw;
     color: rgba(69, 40, 36, 1);
     letter-spacing: 0.2px;
 }
@@ -1203,7 +1220,7 @@ section.footer-widgets {
     font-family: Paralucent;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 1.82vw;
     color: rgba(69, 40, 36, 1);
     letter-spacing: 0.3px;
 }
@@ -1396,6 +1413,19 @@ section.footer-widgets {
 
 /********* Franchise template ----- END ***********/
 /********* Join template ***********/
+.page-template.page-template-page-template-join .page-default-banner {
+    height: auto;
+    padding-bottom: 120px;
+}
+
+.page-template.page-template-page-template-join .page-default-banner .join-us-image {
+    overflow: hidden;
+    border: 15px solid #ffffff;
+    border-radius: 100px;
+    display: inline-block;
+    background: #fff;
+}
+
 .page-template.page-template-page-template-join .wp-bp-main-content.boba-join-us-form {
     background-color: rgba(255, 234, 214, 1);
     background-image: none;

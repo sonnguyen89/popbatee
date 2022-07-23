@@ -1,0 +1,283 @@
+/* Smartphones (smaller) ----------- */
+@media only screen
+and (max-width: 320px) {
+    /* Styles */
+    .main-navigation .menu-item-type-logo.menu-item-object-logo {
+        display: none;
+    }
+
+    .page-template .site-header .navbar {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    .page-template .page-default-banner {
+        background-color: #ffb1a7;
+        height: 560px;
+        padding: 200px 0 0;
+        margin: 0;
+    }
+
+    .page-template .site-header .mobile-logo {
+        display: block;
+        width: 103px;
+        top: 0;
+        right: 10px;
+        position: absolute;
+    }
+
+    .page-template .waffles-row.waffles-items,
+    .page-template .signature-boba-row.signature-boba-items {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .page-template .waffles-row p.text-desc img,
+    .page-template .signature-boba-row p.text-desc img {
+        width: 50%;
+    }
+    .page-template .waffles-row.waffles-items h3.item-desc,
+    .page-template .signature-boba-row.signature-boba-items h3.item-desc {
+        display: none;
+    }
+    .page-template .waffles-row.waffles-items h3.item-desc.mobile,
+    .page-template .signature-boba-row.signature-boba-items h3.item-desc.mobile {
+        display: block;
+        font-size: 20px;
+    }
+    .page-template .order-online .order-online-row p {
+        text-align: center !important;
+        margin: 0;
+    }
+    .page-template .franchise .franchise-row .header,
+    .page-template .order-online .order-online-row .header {
+        font-size: 40px;
+    }
+    .page-template .franchise .franchise-row .text-desc,
+    .page-template .order-online .order-online-row .text-desc {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .page-template .waffles-row h1.header,
+    .page-template .signature-boba-row h1.header {
+        font-size: 40px;
+    }
+}
+/* Smartphones (bigger) ----------- */
+@media only screen
+and (min-width: 321px)
+and (max-width: 479px) {
+    /* Styles */
+    .main-navigation .menu-item-type-logo.menu-item-object-logo {
+        display: none;
+    }
+
+    .page-template .site-header .navbar {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    .page-template .page-default-banner {
+        background-color: #ffb1a7;
+        height: 560px;
+        padding: 200px 0 0;
+        margin: 0;
+    }
+
+    .page-template .site-header .mobile-logo {
+        display: block;
+        width: 103px;
+        top: 0;
+        right: 10px;
+        position: absolute;
+    }
+
+    .page-template .waffles-row.waffles-items,
+    .page-template .signature-boba-row.signature-boba-items {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .page-template .waffles-row p.text-desc img,
+    .page-template .signature-boba-row p.text-desc img {
+        width: 50%;
+    }
+    .page-template .waffles-row.waffles-items h3.item-desc,
+    .page-template .signature-boba-row.signature-boba-items h3.item-desc {
+        display: none;
+    }
+    .page-template .waffles-row.waffles-items h3.item-desc.mobile,
+    .page-template .signature-boba-row.signature-boba-items h3.item-desc.mobile {
+        display: block;
+        font-size: 20px;
+    }
+    .page-template .order-online .order-online-row p {
+        text-align: center !important;
+        margin: 0;
+    }
+    .page-template .order-online .order-online-row p .btn-link img {
+        width: 75%;
+    }
+    .page-template .franchise .franchise-row .header,
+    .page-template .order-online .order-online-row .header {
+        font-size: 40px;
+    }
+    .page-template .franchise .franchise-row .text-desc,
+    .page-template .order-online .order-online-row .text-desc {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .page-template .waffles-row h1.header,
+    .page-template .signature-boba-row h1.header {
+        font-size: 40px;
+    }
+    .page-template .signature-boba-row .see-menu-btn img,
+    .page-template .waffles-row .see-menu-btn img {
+        width: 75%;
+    }
+    .page-template .waffles-row p.text-desc,
+    .page-template .signature-boba-row p.text-desc {
+        font-size: 20px;
+        line-height: 18px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 480px)
+and (max-width: 768px) {
+    /* Styles */
+    .main-navigation .menu-item-type-logo.menu-item-object-logo {
+        display: none;
+    }
+
+    .page-template .site-header .navbar {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    .page-template .page-default-banner {
+        background-color: #ffb1a7;
+        height: 560px;
+        padding: 200px 0 0;
+        margin: 0;
+    }
+
+    .page-template .site-header .mobile-logo {
+        display: block;
+        width: 103px;
+        top: 0;
+        right: 10px;
+        position: absolute;
+    }
+    .page-template .waffles-row.waffles-items,
+    .page-template .signature-boba-row.signature-boba-items {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .page-template .waffles-row p.text-desc img,
+    .page-template .signature-boba-row p.text-desc img {
+        width: 40%;
+    }
+    .page-template .waffles-row.waffles-items h3.item-desc,
+    .page-template .signature-boba-row.signature-boba-items h3.item-desc {
+        display: none;
+    }
+    .page-template .waffles-row.waffles-items h3.item-desc.mobile,
+    .page-template .signature-boba-row.signature-boba-items h3.item-desc.mobile {
+        display: block;
+        font-size: 30px;
+    }
+    .page-template .signature-boba-row .see-menu-btn img,
+    .page-template .waffles-row .see-menu-btn img {
+        width: 35%;
+    }
+    .page-template .order-online .order-online-row p {
+        text-align: center !important;
+        margin: 0;
+    }
+    .page-template .order-online .order-online-row p .btn-link img {
+        width: 75%;
+    }
+    .page-template .franchise .franchise-row .franchise-btn img {
+        width: 75% ;
+    }
+}
+@media only screen
+and (min-width: 768px)
+and (max-width: 991px) {
+    /* Styles */
+    .main-navigation .menu-item-type-logo.menu-item-object-logo {
+        display: none;
+    }
+
+    .page-template .site-header .navbar {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    .page-template .page-default-banner {
+        background-color: #ffb1a7;
+        height: 560px;
+        padding: 200px 0 0;
+        margin: 0;
+    }
+
+    .page-template .site-header .mobile-logo {
+        display: block;
+        width: 103px;
+        top: 0;
+        right: 10px;
+        position: absolute;
+    }
+    .page-template .waffles-row.waffles-items,
+    .page-template .signature-boba-row.signature-boba-items {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .page-template .franchise .franchise-row .franchise-btn img {
+        width: 75% ;
+    }
+}
+
+@media only screen
+and (min-width: 991px)
+and (max-width: 1024px) {
+    /* Styles */
+    .main-navigation .menu-item-type-logo.menu-item-object-logo {
+        display: none;
+    }
+
+    .page-template .site-header .navbar {
+        background-color: #fff;
+        background-image: none;
+    }
+    .page-template .waffles-row.waffles-items,
+    .page-template .signature-boba-row.signature-boba-items {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1224px) {
+    /* Styles */
+    .page-template .site-header .custom-logo {
+        height: 200px;
+        width: auto;
+    }
+}
+
+
+@media only screen
+and (min-width: 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    /* Styles */
+}
+
