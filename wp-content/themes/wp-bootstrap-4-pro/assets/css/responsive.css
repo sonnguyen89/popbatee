@@ -36,6 +36,10 @@ and (max-width: 320px) {
         padding-top: 0;
     }
 
+    .page-template .site-footer .navbar .nav-link {
+        font-size: 20px;
+    }
+
     .page-template section.footer-widgets {
         padding-top: 0;
     }
@@ -232,6 +236,10 @@ and (max-width: 479px) {
         background-color: rgb(251 230 223);
         padding-bottom: 0;
         padding-top: 0;
+    }
+
+    .page-template .site-footer .navbar .nav-link {
+        font-size: 20px;
     }
 
     .page-template section.footer-widgets {
@@ -515,6 +523,10 @@ and (max-width: 767px) {
         padding-top: 0;
     }
 
+    .page-template .site-footer .navbar .nav-link {
+        font-size: 20px;
+    }
+
     .page-template section.footer-widgets {
         padding-top: 0;
     }
@@ -787,6 +799,10 @@ and (max-width: 991px) {
         background-color: rgb(251 230 223);
         padding-bottom: 0;
         padding-top: 0;
+    }
+
+    .page-template .site-footer .navbar .nav-link {
+        font-size: 20px;
     }
 
     .page-template section.footer-widgets {
