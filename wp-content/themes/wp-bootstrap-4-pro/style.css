@@ -1123,7 +1123,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2vw;
     color: rgba(85, 54, 33, 1) !important;
 }
 
@@ -1516,5 +1516,7 @@ section.footer-widgets {
     height: 186px;
     padding: 30px;
 }
-
+.wpcf7-spinner {
+    width: 100%;
+}
 /********* Join template ----- END ***********/
