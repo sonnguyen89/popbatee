@@ -41,7 +41,7 @@ get_template_part('template-parts/default/banner');
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-center signature-row">
+            <div class="row justify-content-center signature-boba-row">
                 <div class="col-md-12">
                     <p class="see-menu-btn text-center">
                         <a href="#" target="_blank" class="btn-link">

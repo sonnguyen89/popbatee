@@ -949,7 +949,7 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 1.82vw;
     color: rgba(69, 40, 36, 1);
     opacity: 1;
 }
@@ -1253,7 +1253,7 @@ section.footer-widgets {
 }
 
 .page-template.page-template-page-template-location .boba-store-row {
-    /* do nothing now */
+    margin-bottom: 30px;
 }
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image {
@@ -1272,7 +1272,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2.60vw;
     color: rgba(83, 52, 31, 1);
 }
 
@@ -1281,19 +1281,19 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 1.82vw;
     color: rgba(69, 40, 36, 1);
     letter-spacing: 0.6px;
-    line-height: 40px;
+    line-height: 2vw;
 }
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item .field-label {
-    line-height: 45px;
+    line-height: 2.3vw;
     text-align: left;
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 1.8vw;
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.6px;
 }
@@ -1301,7 +1301,7 @@ section.footer-widgets {
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item .field-value {
     font-style: normal;
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 1.8vw;
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.6px;
     text-align: left;
@@ -1313,7 +1313,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: lighter;
-    font-size: 40px;
+    font-size: 2.08vw;
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.6px;
 }
@@ -1336,6 +1336,13 @@ section.footer-widgets {
 
 /********* location template ----- END ***********/
 /********* Franchise template ***********/
+.page-template.page-template-page-template-franchise .page-default-banner {
+    background-color: #ffb1a7;
+    height: 670px;
+    padding: 310px 0 0;
+    margin: 0;
+}
+
 .page-template.page-template-page-template-franchise .wp-bp-main-content.boba-franchise-form {
     background-color: rgba(255, 234, 214, 1);
     background-image: none;
@@ -1345,7 +1352,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 4.68vw;
     color: rgba(83, 52, 31, 1);
 }
 
@@ -1353,7 +1360,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 2.3vw;
     color: rgba(85, 54, 33, 1);
 }
 
@@ -1435,7 +1442,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 2.60vw;
     color: rgba(83, 52, 31, 1);
 }
 
@@ -1443,7 +1450,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 2.34vw;
     color: rgba(85, 54, 33, 1);
 }
 
@@ -1452,7 +1459,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2.60vw;
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.8px;
 }
