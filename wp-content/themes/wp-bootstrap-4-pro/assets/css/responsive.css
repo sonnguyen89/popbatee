@@ -71,6 +71,11 @@ and (max-width: 320px) {
         margin: 0;
     }
 
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .page-template .franchise .franchise-row .header,
     .page-template .order-online .order-online-row .header {
         font-size: 40px;
@@ -275,6 +280,11 @@ and (max-width: 479px) {
 
     .page-template .order-online .order-online-row p .btn-link img {
         width: 75%;
+    }
+
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .page-template .franchise .franchise-row .header,
@@ -567,6 +577,11 @@ and (max-width: 767px) {
         width: 75%;
     }
 
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .page-template .franchise .franchise-row .franchise-btn img {
         width: 75%;
     }
@@ -580,6 +595,15 @@ and (max-width: 767px) {
     .page-template .signature-boba-row p.text-desc {
         font-size: 20px;
         line-height: 18px;
+    }
+
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .page-template .franchise .franchise-row .franchise-btn img {
+        width: 75%;
     }
 
     .page-template .franchise .franchise-row .header,
@@ -813,6 +837,11 @@ and (max-width: 991px) {
     .page-template .signature-boba-row.signature-boba-items {
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .page-template .franchise .franchise-row .franchise-btn img {
