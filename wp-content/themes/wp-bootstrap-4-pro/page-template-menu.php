@@ -10,41 +10,42 @@ get_template_part('template-parts/default/banner');
 
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
     <!-- This Month Pick Section -->
+    <?php $this_pick_header = get_field('this_pick_header'); ?>
+    <?php $this_pick_description = get_field('this_pick_description'); ?>
+    <?php $this_pick_items = get_field('this_pick_items'); ?>
+    <?php $boba_menu_url = get_field('boba_menu_url'); ?>
+    <?php $boba_menu_url = !empty($boba_menu_url) ? $boba_menu_url : '#' ?>
     <section class="wp-bp-main-content signature-boba">
         <div class="container-fluid">
             <div class="row justify-content-center signature-boba-row">
                 <div class="col-md-12">
-                    <h1 class="text-center mb-4 header">This Months Picks!</h1>
-                    <p class="mb-0 text-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-                        ultrices
+                    <h1 class="text-center mb-4 header"><?php echo $this_pick_header; ?></h1>
+                    <p class="mb-0 text-desc text-center"><?php echo $this_pick_description ?>
                     </p>
                 </div>
             </div>
             <div class="row justify-content-center signature-boba-row signature-boba-items">
+                <?php foreach($this_pick_items as $index=>$item):  ?>
                 <div class="col-md-4">
-                    <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
+                    <?php if (($index % 2) == 0): ?>
+                        <h3 class="text-center mb-4 item-desc"><?php echo $item['item_name']; ?></h3>
+                    <?php endif; ?>
                     <p class="mb-0 text-desc text-center">
-                        <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_9_df.png" alt="boba-signature"/>
+                        <img src="<?php echo $item['item_image'] ?>" alt="boba-signature"/>
                     </p>
+                    <?php if (($index % 2) != 0): ?>
+                        <h3 class="text-center mb-4 item-desc"><?php echo $item['item_name']; ?></h3>
+                        <h3 class="text-center mb-4 item-desc mobile"><?php echo $item['item_name']; ?></h3>
+                    <?php else: ?>
+                        <h3 class="text-center mb-4 item-desc mobile"><?php echo $item['item_name']; ?></h3>
+                    <?php endif; ?>
                 </div>
-                <div class="col-md-4">
-                    <p class="mb-0 text-desc text-center">
-                        <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_9_df.png" alt="boba-signature"/>
-                    </p>
-                    <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-center mb-4 item-desc">Lorem ipsum</h3>
-                    <p class="mb-0 text-desc text-center">
-                        <img src="http://popbatee.test/wp-content/uploads/2022/07/Image_9_df.png" alt="boba-signature"/>
-                    </p>
-                </div>
+                <?php endforeach; ?>
             </div>
             <div class="row justify-content-center signature-boba-row">
                 <div class="col-md-12">
                     <p class="see-menu-btn text-center">
-                        <a href="#" target="_blank" class="btn-link">
+                        <a href="<?php echo $boba_menu_url; ?>>" target="_blank" class="btn-link">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/boba_menu_btn.svg'); ?>"
                                  alt="boba Menu button"/>
                         </a>
@@ -58,16 +59,28 @@ get_template_part('template-parts/default/banner');
         <div class="container">
             <div class="row justify-content-center order-online-row">
                 <div class="col-md-12">
-                    <h1 class="text-center mb-4 header">Order Online</h1>
-                    <p class="mb-0 text-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-                        ultrices</p>
+                    <?php $order_online_header = get_field('order_online_header',38); ?>
+                    <?php $order_online_description = get_field('order_online_description',38); ?>
+                    <h1 class="text-center mb-4 header"><?php echo $order_online_header; ?></h1>
+                    <p class="mb-0 text-desc text-center">
+                        <?php echo $order_online_description; ?>
+                    </p>
                 </div>
             </div>
+            <?php
+            $order_pickup_url = get_field('order_pickup_url',38);
+            $order_pickup_url = !empty($order_pickup_url) ? $order_pickup_url : '#';
+            $order_delivery_url = get_field('order_delivery_url',38);
+            $order_delivery_url = !empty($order_delivery_url) ? $order_delivery_url : '#';
+            $uber_eat_url = get_field('uber_eat_url',38);
+            $uber_eat_url = !empty($uber_eat_url) ? $uber_eat_url : '#';
+            $door_dash_url = get_field('door_dash_url',38);
+            $door_dash_url = !empty($door_dash_url) ? $door_dash_url : '#';
+            ?>
             <div class="row justify-content-center order-online-row">
                 <div class="col-md-6">
                     <p class="text-right">
-                        <a href="#" target="_blank" class="btn-link">
+                        <a href="<?php echo $order_pickup_url; ?>" target="_blank" class="btn-link">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/order_pickup_btn.svg'); ?>"
                                  alt="order pickup button"/>
                         </a>
@@ -75,7 +88,7 @@ get_template_part('template-parts/default/banner');
                 </div>
                 <div class="col-md-6">
                     <p class="text-left">
-                        <a href="#" target="_blank" class="btn-link">
+                        <a href=<?php echo $order_delivery_url; ?>" target="_blank" class="btn-link">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/order_delivery_btn.svg'); ?>"
                                  alt="order delivery Menu button"/>
                         </a>
@@ -85,7 +98,7 @@ get_template_part('template-parts/default/banner');
             <div class="row justify-content-center order-online-row">
                 <div class="col-md-6">
                     <p class="text-right">
-                        <a href="#" target="_blank" class="btn-link">
+                        <a href="<?php echo $uber_eat_url; ?>" target="_blank" class="btn-link">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/uber_eat_btn.svg'); ?>"
                                  alt="uber eat button"/>
                         </a>
@@ -93,7 +106,7 @@ get_template_part('template-parts/default/banner');
                 </div>
                 <div class="col-md-6">
                     <p class="text-left">
-                        <a href="#" target="_blank" class="btn-link">
+                        <a href="<?php echo $door_dash_url; ?>" target="_blank" class="btn-link">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/doordash_btn.svg'); ?>"
                                  alt="doordash Menu button"/>
                         </a>

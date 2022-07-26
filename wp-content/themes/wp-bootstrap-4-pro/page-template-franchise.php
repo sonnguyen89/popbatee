@@ -5,7 +5,8 @@
 
 get_header('default');
 get_template_part('template-parts/franchise/banner');
-
+$franchise_form_header = get_field('franchise_form_header');
+$franchise_form_description = get_field('franchise_form_description');
 ?>
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
     <!-- Franchise form Section -->
@@ -16,12 +17,10 @@ get_template_part('template-parts/franchise/banner');
                     <p class="text-center mb-4 header">
                         <img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/popatee_form_logo.svg'); ?>"/>
                     </p>
-                    <p class="mb-0 text-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-                        ultrices
+                    <p class="mb-0 text-desc text-center"><?php echo $franchise_form_description; ?>
                     </p>
                     <p class="text-center mb-2 header">
-                        Join Us Today!
+                        <?php echo $franchise_form_header; ?>
                     </p>
                     <p class="mb-0 text-desc text-center">
                         <?php echo do_shortcode("[contact-form-7 id='103' title='Join Us Today!']"); ?>

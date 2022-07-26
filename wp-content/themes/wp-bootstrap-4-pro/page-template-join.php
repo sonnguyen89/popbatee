@@ -5,7 +5,8 @@
 
 get_header('default');
 get_template_part('template-parts/join/banner');
-
+$join_us_form_header = get_field('join_us_form_header');
+$join_us_form_description = get_field('join_us_form_description');
 ?>
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
     <!-- Franchise form Section -->
@@ -16,12 +17,11 @@ get_template_part('template-parts/join/banner');
                     <p class="text-center mb-4 header">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/popatee_form_logo.svg'); ?>"/>
                     </p>
-                    <p class="mb-0 text-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-                        ultrices
+                    <p class="mb-0 text-desc text-center">
+                        <?php echo $join_us_form_description; ?>
                     </p>
                     <p class="text-center mb-2 header">
-                        Work With us!
+                        <?php echo $join_us_form_header; ?>
                     </p>
                     <p class="mb-0 text-desc text-center">
                         <?php echo do_shortcode("[contact-form-7 id='104' title='Work With Us!']"); ?>
