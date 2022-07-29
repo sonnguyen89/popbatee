@@ -258,7 +258,7 @@ get_template_part('template-parts/default/banner');
             <div class="row">
                 <div class="col-md-12 justify-content-center">
                     <!-- Specify justify-content-end to align to the right -->
-                    <?php bootstrap_pagination($my_query); ?>
+                    <?php bootstrap_pagination($my_query,true, array('prev_next' => false)); ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
             </div>
