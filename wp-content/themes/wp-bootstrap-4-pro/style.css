@@ -1276,7 +1276,7 @@ section.footer-widgets {
 }
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image img {
-    height: 736px;
+    height: auto;
 }
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item .header {
