@@ -71,6 +71,11 @@ and (max-width: 320px) {
         margin: 0;
     }
 
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .page-template .franchise .franchise-row .header,
     .page-template .order-online .order-online-row .header {
         font-size: 40px;
@@ -275,6 +280,11 @@ and (max-width: 479px) {
 
     .page-template .order-online .order-online-row p .btn-link img {
         width: 75%;
+    }
+
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .page-template .franchise .franchise-row .header,
@@ -567,6 +577,11 @@ and (max-width: 767px) {
         width: 75%;
     }
 
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .page-template .franchise .franchise-row .franchise-btn img {
         width: 75%;
     }
@@ -580,6 +595,15 @@ and (max-width: 767px) {
     .page-template .signature-boba-row p.text-desc {
         font-size: 20px;
         line-height: 18px;
+    }
+
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .page-template .franchise .franchise-row .franchise-btn img {
+        width: 75%;
     }
 
     .page-template .franchise .franchise-row .header,
@@ -815,8 +839,20 @@ and (max-width: 991px) {
         margin-bottom: 10px;
     }
 
+    .page-template .franchise {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .page-template .franchise .franchise-row .franchise-btn img {
         width: 75%;
+    }
+
+    .page-template.page-template-page-template-menu .page-default-banner {
+        background-color: #ffb1a7;
+        height: 646px;
+        padding: 185px 10% 0;
+        margin: 0;
     }
 
     .page-template.page-template-page-template-location .page-default-banner {
@@ -874,6 +910,11 @@ and (max-width: 991px) {
         padding-top: 0;
     }
 
+    .page-template.page-template-page-template-join .page-default-banner {
+        height: auto;
+        padding: 180px 10% 120px;
+    }
+
     .page-template.page-template-page-template-join .page-default-banner .join-us-image {
         overflow: hidden;
         border: 10px solid #ffffff;
@@ -894,7 +935,7 @@ and (max-width: 991px) {
 
 @media only screen
 and (min-width: 992px)
-and (max-width: 1024px) {
+and (max-width: 1023px) {
     /* Styles */
     .main-navigation .menu-item-type-logo.menu-item-object-logo {
         display: none;
@@ -911,6 +952,27 @@ and (max-width: 1024px) {
         margin-bottom: 10px;
     }
 
+    .page-template.page-template-page-template-menu .page-default-banner {
+        background-color: #ffb1a7;
+        height: 646px;
+        padding: 185px 10% 0;
+        margin: 0;
+    }
+
+    .page-template.page-template-page-template-menu .page-default-banner p.page-desc {
+        margin-bottom: 2rem;
+    }
+    .page-template.page-template-page-template-menu .page-default-banner p.page-desc .btn-link img {
+        width: 50%;
+    }
+
+    .page-template.page-template-page-template-location .page-default-banner {
+        background-color: #ffb1a7;
+        height: 520px;
+        padding: 186px 10% 0;
+        margin: 0;
+    }
+
     .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image {
         overflow: hidden;
         border: 10px solid #ffffff;
@@ -921,10 +983,23 @@ and (max-width: 1024px) {
     .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image img {
         height: auto
     }
+
+    .page-template.page-template-page-template-franchise .page-default-banner {
+        background-color: #ffb1a7;
+        height: 520px;
+        padding: 186px 10% 0;
+        margin: 0;
+    }
+
+    .page-template.page-template-page-template-join .page-default-banner {
+        height: auto;
+        padding: 180px 10% 120px;
+    }
 }
 
+
 @media only screen
-and (min-width: 1024px)
+and (min-width: 1025px)
 and (max-width: 1224px) {
     /* Styles */
     .page-template .site-header .custom-logo {
@@ -942,17 +1017,41 @@ and (max-width: 1224px) {
     .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image img {
         height: auto
     }
+
+    .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image,
+    .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image {
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        border-radius: 50px;
+        display: inline-block;
+    }
+    .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img,
+    .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
+        height: auto;
+    }
 }
 
 
 @media only screen
-and (min-width: 1224px) {
+and (min-width: 1225px)
+and (max-width: 1524px) {
     /* Styles */
+    .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image,
+    .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image {
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        border-radius: 50px;
+        display: inline-block;
+    }
+    .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img,
+    .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
+        height: auto;
+    }
 }
 
 /* Large screens ----------- */
 @media only screen
-and (min-width: 1824px) {
+and (min-width: 1525px) {
     /* Styles */
 }
 

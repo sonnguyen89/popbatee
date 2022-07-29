@@ -1228,20 +1228,32 @@ section.footer-widgets {
 .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image,
 .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image {
     overflow: hidden;
-    border: 15px solid #ffffff;
-    border-radius: 100px;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
     display: inline-block;
 }
 
 .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img {
-    height: 416px;
+    height: auto;
 }
 
 .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
-    height: 440px;
+    height: auto;
 }
 
-/********* Homepage and Menu template ------- END ***********/
+.page-template.page-template-page-template-menu .page-item.active .page-link {
+    border: 3px solid #553621;
+    border-radius: 20px;
+}
+.page-template.page-template-page-template-menu .page-item .page-link {
+    color: #553621;
+    border: 3px solid transparent;
+    background-color: transparent;
+    margin: 0 10px;
+    padding: 0 12px 0;
+    font-weight: bold;
+}
+/********* Homepage and Menu page template ------- END ***********/
 /********* location template ***********/
 .page-template.page-template-page-template-location .page-menu.order-online {
     background-color: #f9c79f;
@@ -1258,8 +1270,8 @@ section.footer-widgets {
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image {
     overflow: hidden;
-    border: 15px solid #ffffff;
-    border-radius: 100px;
+    border: 12px solid #ffffff;
+    border-radius: 50px;
     display: inline-block;
 }
 
@@ -1317,7 +1329,19 @@ section.footer-widgets {
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.6px;
 }
-
+.page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown {
+    background-image: none;
+    border: 3px solid #553621;
+    background-color: transparent;
+}
+.page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown {
+    background-image: none;
+    border: 3px solid #553621;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #553621;
+    font-weight: bold;
+}
 .page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown:after {
     display: inline-block;
     width: 0;
@@ -1325,13 +1349,25 @@ section.footer-widgets {
     margin-left: 0.255em;
     vertical-align: 0.255em;
     content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
+    border-top: 0.6em solid;
+    border-right: 0.6em solid transparent;
     border-bottom: 0;
-    border-left: 0.3em solid transparent;
+    border-left: 0.6em solid transparent;
     position: absolute;
-    right: 9px;
+    right: 27px;
     top: 16px;
+}
+.page-template.page-template-page-template-location .boba-store-row .filter-form #postcode-filter-input {
+    background-image: none;
+    border: 3px solid #553621;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #553621;
+    font-weight: bold;
+    text-align: center;
+}
+.page-template.page-template-page-template-location .boba-store-row .filter-form #postcode-filter-input::placeholder {
+    color: #553621;
 }
 
 /********* location template ----- END ***********/
@@ -1442,7 +1478,7 @@ section.footer-widgets {
     font-family: Proxima Soft;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.60vw;
+    font-size: 4.68vw;
     color: rgba(83, 52, 31, 1);
 }
 
