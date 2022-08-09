@@ -937,13 +937,12 @@ body.custom-background .wp-bp-main-content .col-md-8 {
 
 /********* Homepage and Menu template ***********/
 .page-template .site-header .navbar {
-    background-color: #ffb1a7;
+    background-color: transparent;
     background-image: url("/wp-content/themes/wp-bootstrap-4-pro/assets/images/menu_bg.svg");
-    background-size: cover;
-    background-position: bottom 4rem right 0;
+    background-size: 101%;
+    background-position: bottom 4rem right -1px;
     background-repeat: no-repeat;
 }
-
 .page-template .site-header .navbar .nav-link {
     text-align: center;
     font-family: Proxima Soft;
