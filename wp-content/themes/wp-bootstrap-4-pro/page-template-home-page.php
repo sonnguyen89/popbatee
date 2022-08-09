@@ -166,7 +166,8 @@ get_template_part('template-parts/front-page/banner');
         <div class="container-fluid">
             <div class="row justify-content-center pobbatee-store-image-row">
                 <div class="col-md-12 p-0">
-                    <img class="d-block w-100" src="http://popbatee.test/wp-content/uploads/2022/07/Image_18.png"
+                    <?php $home_store_image = get_field('home_store_image'); ?>
+                    <img class="d-block w-100" src="<?php echo $home_store_image; ?>"
                          alt="boba store image"/>
                 </div>
             </div>

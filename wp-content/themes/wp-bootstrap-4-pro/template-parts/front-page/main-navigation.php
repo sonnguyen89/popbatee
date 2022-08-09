@@ -28,16 +28,21 @@ if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name_
             <?php endforeach; ?>
         <?php endif; ?>
         <li class="nav-item menu-item menu-item-type-logo menu-item-object-logo">
-            <?php the_custom_logo();?>
+            <?php // the_custom_logo();?>
+            <img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/main_menu_logo.svg'); ?>" alt="menu logo" class="custom-logo"/>
         </li>
         <?php if(!empty($menu_items_2)): ?>
             <?php foreach($menu_items_2 as $key => $menuItem): ?>
+                <?php $order_class = ''; ?>
+                <?php if($menuItem->title == 'Order'):
+                    $order_class= 'custom-order';
+                endif; ?>
                 <?php if($key == 0): ?>
                     <li class="nav-item active menu-item menu-item-type-<?php echo $menuItem->type; ?> menu-item-object-<?php echo $menuItem->object; ?> menu-item-<?php echo strtolower($menuItem->title); ?> current-menu-item <?php echo $menuItem->object; ?>_item current_page_item">
-                        <a href="<?php echo $menuItem->url; ?>" class="nav-link"><?php echo $menuItem->title; ?></a>
+                        <a href="<?php echo $menuItem->url; ?>" class="nav-link <?php echo $order_class; ?>"><?php echo $menuItem->title; ?></a>
                     </li>
                 <?php else: ?>
-                    <li class="nav-item menu-item menu-item-type-<?php echo $menuItem->type; ?> menu-item-object-<?php echo $menuItem->object; ?>"><a href="<?php echo $menuItem->url; ?>" class="nav-link"><?php echo $menuItem->title; ?></a></li>
+                    <li class="nav-item menu-item menu-item-type-<?php echo $menuItem->type; ?> menu-item-object-<?php echo $menuItem->object; ?>"><a href="<?php echo $menuItem->url; ?>" class="nav-link <?php echo $order_class; ?>"><?php echo $menuItem->title; ?></a></li>
                 <?php endif; ?>
             <?php endforeach; ?>
         <?php endif; ?>

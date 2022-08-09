@@ -953,7 +953,11 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     color: rgba(69, 40, 36, 1);
     opacity: 1;
 }
-
+.page-template .site-header .navbar .nav-link.custom-order {
+    background: rgba(69, 40, 36, 1);
+    color: #fff;
+    border-radius: 50px;
+}
 .page-template .site-header .custom-logo {
     height: 250px;
     width: auto;
@@ -1276,7 +1280,7 @@ section.footer-widgets {
 }
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image img {
-    height: 736px;
+    height: auto;
 }
 
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item .header {
