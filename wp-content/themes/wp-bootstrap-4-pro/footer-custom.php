@@ -90,6 +90,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<?php $custom_footer_content = get_option('popbatee-footer-content-field');  ?>
+<?php if(!empty($custom_footer_content) || isset($custom_footer_content)): ?>
+<?php echo htmlspecialchars_decode($custom_footer_content,ENT_QUOTES);  ?>
+<?php endif; ?>
 
 </body>
 </html>
