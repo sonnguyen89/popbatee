@@ -7,6 +7,8 @@ get_header('default');
 get_template_part('template-parts/join/banner');
 $join_us_form_header = get_field('join_us_form_header');
 $join_us_form_description = get_field('join_us_form_description');
+global $post;
+$page_id = $post->ID;
 ?>
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
     <!-- Franchise form Section -->

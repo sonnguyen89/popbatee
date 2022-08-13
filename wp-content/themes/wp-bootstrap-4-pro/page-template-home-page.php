@@ -5,7 +5,8 @@
 
 get_header('homepage');
 get_template_part('template-parts/front-page/banner');
-
+global $post;
+$page_id = $post->ID;
 ?>
 
 <?php if (get_theme_mod('show_main_content', 1)) : ?>

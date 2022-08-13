@@ -5,7 +5,8 @@
 
 get_header('default');
 get_template_part('template-parts/default/banner');
-
+global $post;
+$page_id = $post->ID;
 ?>
 
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
@@ -59,8 +60,8 @@ get_template_part('template-parts/default/banner');
         <div class="container">
             <div class="row justify-content-center order-online-row">
                 <div class="col-md-12">
-                    <?php $order_online_header = get_field('order_online_header',38); ?>
-                    <?php $order_online_description = get_field('order_online_description',38); ?>
+                    <?php $order_online_header = get_field('order_online_header',$page_id); ?>
+                    <?php $order_online_description = get_field('order_online_description',$page_id); ?>
                     <h1 class="text-center mb-4 header"><?php echo $order_online_header; ?></h1>
                     <p class="mb-0 text-desc text-center">
                         <?php echo $order_online_description; ?>
@@ -68,13 +69,13 @@ get_template_part('template-parts/default/banner');
                 </div>
             </div>
             <?php
-            $order_pickup_url = get_field('order_pickup_url',38);
+            $order_pickup_url = get_field('order_pickup_url',$page_id);
             $order_pickup_url = !empty($order_pickup_url) ? $order_pickup_url : '#';
-            $order_delivery_url = get_field('order_delivery_url',38);
+            $order_delivery_url = get_field('order_delivery_url',$page_id);
             $order_delivery_url = !empty($order_delivery_url) ? $order_delivery_url : '#';
-            $uber_eat_url = get_field('uber_eat_url',38);
+            $uber_eat_url = get_field('uber_eat_url',$page_id);
             $uber_eat_url = !empty($uber_eat_url) ? $uber_eat_url : '#';
-            $door_dash_url = get_field('door_dash_url',38);
+            $door_dash_url = get_field('door_dash_url',$page_id);
             $door_dash_url = !empty($door_dash_url) ? $door_dash_url : '#';
             ?>
             <div class="row justify-content-center order-online-row">
@@ -88,7 +89,7 @@ get_template_part('template-parts/default/banner');
                 </div>
                 <div class="col-md-6">
                     <p class="text-left">
-                        <a href=<?php echo $order_delivery_url; ?>" target="_blank" class="btn-link">
+                        <a href="<?php echo $order_delivery_url; ?>" target="_blank" class="btn-link">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/order_delivery_btn.svg'); ?>"
                                  alt="order delivery Menu button"/>
                         </a>
@@ -120,7 +121,8 @@ get_template_part('template-parts/default/banner');
         <div class="container-fluid p-5">
             <div class="row justify-content-center list-menu-item-1-row">
                 <div class="col-md-12">
-                    <h1 class="text-center mb-4 header">Milk Tea</h1>
+                    <?php $menu_header = get_field('menu_1_header', $page_id) ?? 'Milk Tea' ; ?>
+                    <h1 class="text-center mb-4 header"><?php echo $menu_header; ?></h1>
                 </div>
             </div>
             <div class="row list-menu-item-1-row">
@@ -196,7 +198,8 @@ get_template_part('template-parts/default/banner');
         <div class="container-fluid p-5">
             <div class="row justify-content-center list-menu-item-2-row">
                 <div class="col-md-12">
-                    <h1 class="text-center mb-4 header">Waffles</h1>
+                    <?php $menu_header = get_field('menu_2_header', $page_id) ?? 'Waffles' ; ?>
+                    <h1 class="text-center mb-4 header"><?php echo $menu_header; ?></h1>
                 </div>
             </div>
             <div class="row list-menu-item-2-row">

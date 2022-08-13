@@ -7,6 +7,8 @@ get_header('default');
 get_template_part('template-parts/franchise/banner');
 $franchise_form_header = get_field('franchise_form_header');
 $franchise_form_description = get_field('franchise_form_description');
+global $post;
+$page_id = $post->ID;
 ?>
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
     <!-- Franchise form Section -->
