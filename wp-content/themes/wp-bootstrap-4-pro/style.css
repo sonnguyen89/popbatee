@@ -962,6 +962,45 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     width: auto;
 }
 
+.page-template .homepage-banner .carousel-control-next-icon,
+.page-template .homepage-banner .carousel-control-prev-icon {
+    background-image: none;
+    font-family: Sarah Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 1px;
+}
+.page-template .homepage-banner .banner-header {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Proxima Soft;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.5vw;
+    color: rgba(255,255,255,1);
+    padding: 0 100px;
+    line-height: 6.7vw;
+
+}
+.page-template .homepage-banner .banner-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Proxima Soft;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3vw;
+    line-height: 3.12vw;
+    color: rgba(255,255,255,1);
+    padding: 0 100px;
+}
 .page-template .wp-bp-main-content.signature-boba,
 .page-template .wp-bp-main-content.waffles {
     background-color: #f8d9cf;

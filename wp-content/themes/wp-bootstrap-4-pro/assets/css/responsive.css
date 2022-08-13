@@ -15,6 +15,18 @@ and (max-width: 320px) {
         background-image: none;
     }
 
+    .page-template .homepage-banner .banner-header {
+        bottom: 22%;
+        font-size: 24px;
+        padding: 0 40px;
+    }
+
+    .page-template .homepage-banner .banner-desc {
+        bottom: 0;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+
     .page-template .page-default-banner {
         background-color: #ffb1a7;
         height: 560px;
@@ -210,6 +222,18 @@ and (max-width: 479px) {
     .page-template .site-header .navbar {
         background-color: transparent;
         background-image: none;
+    }
+
+    .page-template .homepage-banner .banner-header {
+        bottom: 20%;
+        font-size: 27px;
+        padding: 0 40px;
+    }
+
+    .page-template .homepage-banner .banner-desc {
+        bottom: 0;
+        padding: 0 5px;
+        font-size: 15px;
     }
 
     .page-template .page-default-banner {
@@ -502,6 +526,14 @@ and (max-width: 767px) {
         background-image: none;
     }
 
+    .page-template .homepage-banner .banner-header {
+        bottom: 23%;
+        padding: 0 20%;
+        font-size: 5vw;
+    }
+    .page-template .homepage-banner .banner-desc {
+        bottom: 6%;
+    }
     .page-template .page-default-banner {
         background-color: #ffb1a7;
         height: 360px;
@@ -931,6 +963,14 @@ and (max-width: 991px) {
     .page-template.page-template-page-template-join section.footer-widgets {
         padding-top: 0;
     }
+    .page-template .homepage-banner .banner-header {
+        bottom: 23%;
+        padding: 0 20%;
+        font-size: 5vw;
+    }
+    .page-template .homepage-banner .banner-desc {
+        bottom: 6%;
+    }
 }
 
 @media only screen
@@ -1047,11 +1087,25 @@ and (max-width: 1524px) {
     .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
         height: auto;
     }
+    .page-template .homepage-banner .banner-header {
+        bottom: 23%;
+        padding: 0 20%;
+    }
+    .page-template .homepage-banner .banner-desc {
+        bottom: 6%;
+    }
 }
 
 /* Large screens ----------- */
 @media only screen
 and (min-width: 1525px) {
     /* Styles */
+    .page-template .homepage-banner .banner-header {
+        bottom: 23%;
+        padding: 0 20%;
+    }
+    .page-template .homepage-banner .banner-desc {
+        bottom: 6%;
+    }
 }
 
