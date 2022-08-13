@@ -7,6 +7,8 @@ get_header('default');
 get_template_part('template-parts/location/banner');
 $location_filter_header = get_field('location_filter_header');
 $location_filter_description = get_field('location_filter_description');
+global $post;
+$page_id = $post->ID;
 ?>
 <?php if (get_theme_mod('show_main_content', 1)) : ?>
     <!-- Find your store Section -->

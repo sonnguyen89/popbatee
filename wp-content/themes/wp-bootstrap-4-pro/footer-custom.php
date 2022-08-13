@@ -31,8 +31,8 @@
                         <div class="widget-area footer-3-area">
                             <p class="text-desc text-center"> Connect with us</p>
                             <p class="social-icons text-center">
-                                <a href="#" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/facebook_ico.svg'); ?>" alt="boba store image"/></a>
-                                <a href="#" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/instagram_ico.svg'); ?>" alt="boba store image"/></a>
+                                <a href="https://www.facebook.com/popbatee/about" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/facebook_ico.svg'); ?>" alt="boba store image"/></a>
+                                <a href="https://www.instagram.com/popbatee/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() .'/assets/images/instagram_ico.svg'); ?>" alt="boba store image"/></a>
                             </p>
                         </div>
                     </div>
