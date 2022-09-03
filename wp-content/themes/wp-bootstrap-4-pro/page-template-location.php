@@ -97,7 +97,7 @@ $page_id = $post->ID;
                                             </div>
                                         <?php endif; ?>
                                         <?php if (!empty($telephone)) : ?>
-                                            <div class="row">
+                                            <div class="row telephone-row">
                                                 <div class="col-6 p-0">
                                                     <p class="field-label">Telephone</p>
                                                 </div>
@@ -108,7 +108,7 @@ $page_id = $post->ID;
                                         <?php endif; ?>
 
                                         <?php if (!empty($trading_hours)) : ?>
-                                            <div class="row">
+                                            <div class="row trading-hours-row">
                                                 <div class="col-12 p-0">
                                                     <p class="field-label">Trading Hours</p>
                                                 </div>
@@ -116,10 +116,10 @@ $page_id = $post->ID;
                                             <div class="row">
                                                 <?php foreach ($trading_hours as $th): ?>
                                                     <div class="col-6 p-0">
-                                                        <p class="field-value"><?php echo $th['date']; ?> </p>
+                                                        <p class="trading-hours field-value"><?php echo $th['date']; ?> </p>
                                                     </div>
                                                     <div class="col-6 p-0">
-                                                        <p class="field-value"><?php echo $th['hours']; ?> </p>
+                                                        <p class="trading-hours field-value"><?php echo $th['hours']; ?> </p>
                                                     </div>
                                                 <?php endforeach; ?>
                                             </div>
@@ -127,7 +127,7 @@ $page_id = $post->ID;
                                         <?php endif; ?>
 
                                         <?php if (!empty($email)) : ?>
-                                            <div class="row">
+                                            <div class="row email-row">
                                                 <div class="col-6 p-0">
                                                     <p class="field-label">Email</p>
                                                 </div>
@@ -154,8 +154,8 @@ $page_id = $post->ID;
         <div class="container">
             <div class="row justify-content-center order-online-row">
                 <div class="col-md-12">
-                    <?php $order_online_header = get_field('location_order_online_header'); ?>
-                    <?php $order_online_description = get_field('location_order_online_description'); ?>
+                    <?php $order_online_header = get_field('location_order_online_header',$page_id); ?>
+                    <?php $order_online_description = get_field('location_order_online_description',$page_id); ?>
                     <h1 class="text-center mb-4 header"><?php echo $order_online_header; ?></h1>
                     <p class="mb-0 text-desc text-center">
                         <?php echo $order_online_description; ?>
