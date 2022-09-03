@@ -37,7 +37,7 @@
                         </div>
                     </div>
 				</div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center footer-menu-content">
                     <div class="col-md-12">
                         <?php
                             $menu_name_1 = 'menu-1';
@@ -81,7 +81,7 @@
                     <p class="text-left">© Popbatee 2022 All Rights Reserved</p>
                 </div>
                 <div class="col-md-6 mb-3 mt-3">
-                    <p class="text-right">Website By Flabbergast</p>
+                    <p class="text-right"><a href="http://www.flabbergast.com.au/">Website By Flabbergast</a></p>
                 </div>
 			</div><!-- .site-info -->
 		</div>

@@ -16,6 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 WP Bootstrap 4 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
+@import url("./assets/fonts/proxima-font/proxima.css");
 body {
     background-color: #f8f9fa;
 }
@@ -940,9 +941,10 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     background-color: transparent;
     background-image: url("/wp-content/themes/wp-bootstrap-4-pro/assets/images/menu_bg.svg");
     background-size: 101%;
-    background-position: bottom 4rem right -1px;
+    background-position: bottom 2rem right -1px;
     background-repeat: no-repeat;
 }
+
 .page-template .site-header .navbar .nav-link {
     text-align: center;
     font-family: Proxima Soft;
@@ -951,12 +953,19 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-size: 1.82vw;
     color: rgba(69, 40, 36, 1);
     opacity: 1;
+    margin-top: 2rem;
 }
+
+.page-template .site-header .navbar .nav-link:hover {
+    opacity: 0.6;
+}
+
 .page-template .site-header .navbar .nav-link.custom-order {
     background: rgba(69, 40, 36, 1);
     color: #fff;
     border-radius: 50px;
 }
+
 .page-template .site-header .custom-logo {
     height: 250px;
     width: auto;
@@ -969,9 +978,10 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-style: normal;
     font-weight: normal;
     font-size: 100px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     letter-spacing: 1px;
 }
+
 .page-template .homepage-banner .banner-header {
     position: absolute;
     bottom: 20%;
@@ -982,11 +992,12 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-style: normal;
     font-weight: bold;
     font-size: 6.5vw;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     padding: 0 100px;
     line-height: 6.7vw;
 
 }
+
 .page-template .homepage-banner .banner-desc {
     position: absolute;
     bottom: 5%;
@@ -998,9 +1009,10 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     font-weight: normal;
     font-size: 2.3vw;
     line-height: 3.12vw;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     padding: 0 100px;
 }
+
 .page-template .wp-bp-main-content.signature-boba,
 .page-template .wp-bp-main-content.waffles {
     background-color: #f8d9cf;
@@ -1009,6 +1021,7 @@ body.custom-background .wp-bp-main-content .col-md-8 {
 .page-template .wp-bp-main-content.waffles {
     background-image: url("/wp-content/themes/wp-bootstrap-4-pro/assets/images/waffles_bg.png");
     background-size: cover;
+    padding: 4rem 0 8rem;
 }
 
 .page-template .waffles-row h1.header,
@@ -1053,6 +1066,7 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.8px;
 }
+
 .page-template .waffles-row.waffles-items h3.item-desc.mobile,
 .page-template .signature-boba-row.signature-boba-items h3.item-desc.mobile {
     display: none;
@@ -1061,6 +1075,10 @@ body.custom-background .wp-bp-main-content .col-md-8 {
 .page-template .signature-boba-row p.see-menu-btn .btn-link,
 .page-template .waffles-row p.see-menu-btn .btn-link {
     display: inline-block;
+}
+.page-template .signature-boba-row p.see-menu-btn .btn-link:hover,
+.page-template .waffles-row p.see-menu-btn .btn-link:hover {
+    opacity: 0.6;
 }
 
 .page-template .order-online {
@@ -1090,7 +1108,9 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     display: inline-block;
     margin-top: 50px;
 }
-
+.page-template .order-online-row .btn-link:hover {
+    opacity: 0.7;
+}
 .page-template .franchise {
     background-color: rgba(249, 199, 159, 1);
     /*background-image: url("/wp-content/themes/wp-bootstrap-4-pro/assets/images/footer_bg.png");*/
@@ -1124,7 +1144,9 @@ body.custom-background .wp-bp-main-content .col-md-8 {
     display: inline-block;
     margin-top: 50px;
 }
-
+.page-template .franchise-row p.franchise-btn .btn-link:hover {
+    opacity: 0.7;
+}
 .page-template .site-footer {
     background-color: rgba(249, 199, 159, 1);
     padding-bottom: 0;
@@ -1168,7 +1190,9 @@ section.footer-widgets {
     font-size: 2vw;
     color: rgba(85, 54, 33, 1) !important;
 }
-
+.page-template .site-footer .navbar .nav-link:hover {
+    opacity: 0.6;
+}
 .page-template .site-footer .site-info {
     background: rgba(254, 246, 241, 1);
 }
@@ -1181,6 +1205,19 @@ section.footer-widgets {
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.6px;
     margin: 0;
+}
+.page-template .site-footer .site-info a {
+    color: rgba(85, 54, 33, 1) !important;
+}
+.page-template .site-footer .social-icons a:hover {
+    opacity: 0.7;
+}
+.page-template .site-footer .footer-1-area p {
+    margin-bottom: 0;
+}
+
+.page-template .site-footer .footer-menu-content {
+    margin-top: 7rem;
 }
 
 .page-template .page-default-banner {
@@ -1206,6 +1243,9 @@ section.footer-widgets {
     font-weight: normal;
     font-size: 2.34vw;
 }
+.page-template.page-template-page-template-menu .page-default-banner {
+    height: 960px;
+}
 
 .page-template .page-menu.order-online {
     background-color: #f8d9cf;
@@ -1218,12 +1258,12 @@ section.footer-widgets {
 .page-template .list-menu-item-1 {
     background-color: rgba(255, 234, 214, 1);
     padding-top: 112px;
-    padding-bottom: 112px;
+    padding-bottom: 0px;
 }
 
 .page-template .list-menu-item-2 {
     background-color: rgba(249, 199, 159, 1);
-    padding-top: 112px;
+    padding-top: 70px;
     padding-bottom: 0;
 }
 
@@ -1273,36 +1313,58 @@ section.footer-widgets {
     border: 10px solid #ffffff;
     border-radius: 50px;
     display: inline-block;
+
+}
+.page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image {
+    width: 20vw;
+    height: 20vw
+}
+.page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image {
+    width: 25vw;
+    height:25vw
 }
 
 .page-template .list-menu-item-1 .list-menu-item-1-row .menu-item-image img {
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .page-template .list-menu-item-2 .list-menu-item-2-row .menu-item-image img {
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .page-template.page-template-page-template-menu .page-item.active .page-link {
     border: 3px solid #553621;
     border-radius: 20px;
 }
+
 .page-template.page-template-page-template-menu .page-item .page-link {
     color: #553621;
     border: 3px solid transparent;
     background-color: transparent;
     margin: 0 10px;
-    padding: 0 12px 0;
+    padding: 0 21px 0;
     font-weight: bold;
+    font-size: 2rem;
 }
+
 /********* Homepage and Menu page template ------- END ***********/
 /********* location template ***********/
+.page-template.page-template-page-template-location .page-default-banner {
+    height: 720px;
+}
+
 .page-template.page-template-page-template-location .page-menu.order-online {
     background-color: #f9c79f;
     background-image: none;
+    padding-top: 7rem;
 }
-
+.page-template.page-template-page-template-location .boba-store-row p.text-desc {
+    padding: 0 4rem;
+}
 .page-template.page-template-page-template-location .wp-bp-main-content.find-boba-store {
+    padding-top: 7rem;
     background-color: rgba(255, 234, 214, 1);
 }
 
@@ -1320,7 +1382,9 @@ section.footer-widgets {
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item-image img {
     height: auto;
 }
-
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item {
+    margin-bottom: 60px;
+}
 .page-template.page-template-page-template-location .boba-store-row .boba-store-item .header {
     text-align: left;
     font-family: Proxima Soft;
@@ -1361,6 +1425,14 @@ section.footer-widgets {
     text-align: left;
     font-family: Proxima Soft;
 }
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .trading-hours.field-value {
+    margin-bottom: 0;
+}
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .email-row,
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .telephone-row,
+.page-template.page-template-page-template-location .boba-store-row .boba-store-item .trading-hours-row {
+    margin-top: 20px;
+}
 
 .page-template.page-template-page-template-location .boba-store-row .sort-by-label {
     text-align: left;
@@ -1371,11 +1443,13 @@ section.footer-widgets {
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.6px;
 }
+
 .page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown {
     background-image: none;
     border: 3px solid #553621;
     background-color: transparent;
 }
+
 .page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown {
     background-image: none;
     border: 3px solid #553621;
@@ -1383,22 +1457,32 @@ section.footer-widgets {
     background-color: transparent;
     color: #553621;
     font-weight: bold;
+    width: 20rem !important;
+    height: 60px;
+    padding-top: 14px;
+    padding-left: 27px;
+}
+.page-template.page-template-page-template-location .boba-store-row .filter-form #state-filter-input {
+    width: fit-content;
 }
 .page-template.page-template-page-template-location .boba-store-row .filter-form #statesDropdown:after {
     display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
+    width: 45px;
+    height: 28px;
+    /*margin-left: 0.255em;*/
+    /*vertical-align: 0.255em;*/
     content: "";
-    border-top: 0.6em solid;
-    border-right: 0.6em solid transparent;
-    border-bottom: 0;
-    border-left: 0.6em solid transparent;
+    background-image: url("./assets/images/arrow_down.svg");
+    border: none;
+    /*border-top: 0.6em solid;*/
+    /*border-right: 0.6em solid transparent;*/
+    /*border-bottom: 0;*/
+    /*border-left: 0.6em solid transparent;*/
     position: absolute;
     right: 27px;
-    top: 16px;
+    top: 19px;
 }
+
 .page-template.page-template-page-template-location .boba-store-row .filter-form #postcode-filter-input {
     background-image: none;
     border: 3px solid #553621;
@@ -1407,7 +1491,10 @@ section.footer-widgets {
     color: #553621;
     font-weight: bold;
     text-align: center;
+    width: 20rem !important;
+    height: 60px;
 }
+
 .page-template.page-template-page-template-location .boba-store-row .filter-form #postcode-filter-input::placeholder {
     color: #553621;
 }
@@ -1594,7 +1681,9 @@ section.footer-widgets {
     height: 186px;
     padding: 30px;
 }
+
 .wpcf7-spinner {
     width: 100%;
 }
+
 /********* Join template ----- END ***********/

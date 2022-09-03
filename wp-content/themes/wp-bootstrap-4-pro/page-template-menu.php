@@ -4,7 +4,7 @@
  */
 
 get_header('default');
-get_template_part('template-parts/default/banner');
+get_template_part('template-parts/menu/banner');
 global $post;
 $page_id = $post->ID;
 ?>
