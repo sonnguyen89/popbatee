@@ -16,18 +16,16 @@ $page_id = $post->ID;
         <div class="container">
             <div class="row justify-content-center boba-join-us-form-row">
                 <div class="col-md-12">
-                    <p class="text-center mb-4 header">
+                    <p class="text-center mb-4 header form-logo">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/popatee_form_logo.svg'); ?>"/>
                     </p>
-                    <p class="mb-0 text-desc text-center">
+                    <p class="mb-0 text-desc text-center form-desc">
                         <?php echo $join_us_form_description; ?>
                     </p>
                     <p class="text-center mb-2 header">
                         <?php echo $join_us_form_header; ?>
                     </p>
-                    <p class="mb-0 text-desc text-center">
-                        <?php echo do_shortcode("[contact-form-7 id='104' title='Work With Us!']"); ?>
-                    </p>
+                    <?php echo do_shortcode("[contact-form-7 id='104' title='Work With Us!']"); ?>
                 </div>
             </div>
         </div>
@@ -68,6 +66,6 @@ get_footer('custom');
             }
         });
 
-        $(".boba-join-us-form-row .wpcf7 .message-input #message").attr('rows',10);
+        $(".boba-join-us-form-row .wpcf7 .message-input #message").attr('rows',15);
     });
 </script>

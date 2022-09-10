@@ -1503,7 +1503,7 @@ section.footer-widgets {
 /********* Franchise template ***********/
 .page-template.page-template-page-template-franchise .page-default-banner {
     background-color: #ffb1a7;
-    height: 670px;
+    height: 720px;
     padding: 310px 0 0;
     margin: 0;
 }
@@ -1511,6 +1511,7 @@ section.footer-widgets {
 .page-template.page-template-page-template-franchise .wp-bp-main-content.boba-franchise-form {
     background-color: rgba(255, 234, 214, 1);
     background-image: none;
+    padding-bottom: 0;
 }
 
 .page-template.page-template-page-template-franchise .boba-franchise-form-row .header {
@@ -1520,7 +1521,12 @@ section.footer-widgets {
     font-size: 4.68vw;
     color: rgba(83, 52, 31, 1);
 }
-
+.page-template.page-template-page-template-franchise .boba-franchise-form-row .form-logo {
+    padding-bottom: 50px;
+}
+.page-template.page-template-page-template-franchise .boba-franchise-form-row .form-desc {
+    padding: 0 0 50px;
+}
 .page-template.page-template-page-template-franchise .boba-franchise-form-row p.text-desc {
     font-family: Proxima Soft;
     font-style: normal;
@@ -1529,6 +1535,10 @@ section.footer-widgets {
     color: rgba(85, 54, 33, 1);
 }
 
+.page-template.page-template-page-template-franchise .boba-franchise-form-row .wpcf7 {
+    width: 80%;
+    margin: 0 auto;
+}
 .page-template.page-template-page-template-franchise .boba-franchise-form-row h3.item-desc {
     text-align: center;
     font-family: Proxima Soft;
@@ -1557,6 +1567,7 @@ section.footer-widgets {
 .boba-franchise-form .boba-franchise-form-row .wpcf7-form input.phone,
 .boba-franchise-form .boba-franchise-form-row .wpcf7-form input.city,
 .boba-franchise-form .boba-franchise-form-row .wpcf7-form input.state,
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form select.state,
 .boba-franchise-form .boba-franchise-form-row .wpcf7-form textarea.message {
     background: #F8F8F8 0 0 no-repeat padding-box;
     border-radius: 50px;
@@ -1564,6 +1575,10 @@ section.footer-widgets {
     margin: 10px 0 0;
     height: 50px;
     padding: 0 20px;
+}
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form select.state {
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .boba-franchise-form .boba-franchise-form-row .wpcf7-form .wpcf7-submit {
@@ -1576,10 +1591,13 @@ section.footer-widgets {
     border: none;
     width: 250px;
     height: 70px;
+    margin-top: 2rem;
 }
-
+.boba-franchise-form .boba-franchise-form-row .wpcf7-form .wpcf7-submit:hover {
+    opacity: 0.7;
+}
 .boba-franchise-form-row .wpcf7 .message-input #message {
-    height: 186px;
+    height: 240px;
     padding: 30px;
 }
 
@@ -1596,11 +1614,13 @@ section.footer-widgets {
     border-radius: 100px;
     display: inline-block;
     background: #fff;
+    margin-top: 3rem;
 }
 
 .page-template.page-template-page-template-join .wp-bp-main-content.boba-join-us-form {
     background-color: rgba(255, 234, 214, 1);
     background-image: none;
+    padding-bottom: 0;
 }
 
 .page-template.page-template-page-template-join .boba-join-us-form-row .header {
@@ -1610,6 +1630,9 @@ section.footer-widgets {
     font-size: 4.68vw;
     color: rgba(83, 52, 31, 1);
 }
+.page-template.page-template-page-template-join .boba-join-us-form-row .form-logo {
+    padding-bottom: 50px;
+}
 
 .page-template.page-template-page-template-join .boba-join-us-form-row p.text-desc {
     font-family: Proxima Soft;
@@ -1617,6 +1640,9 @@ section.footer-widgets {
     font-weight: normal;
     font-size: 2.34vw;
     color: rgba(85, 54, 33, 1);
+}
+.page-template.page-template-page-template-join .boba-join-us-form-row .form-desc {
+    padding: 0 0 50px;
 }
 
 .page-template.page-template-page-template-join .boba-join-us-form-row h3.item-desc {
@@ -1627,6 +1653,10 @@ section.footer-widgets {
     font-size: 2.60vw;
     color: rgba(85, 54, 33, 1);
     letter-spacing: 0.8px;
+}
+.page-template.page-template-page-template-join .boba-join-us-form-row .wpcf7 {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .page-template.page-template-page-template-join .site-footer {
@@ -1664,6 +1694,10 @@ section.footer-widgets {
     border: none;
     width: 250px;
     height: 70px;
+    margin-top: 2rem;
+}
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form .wpcf7-submit:hover {
+    opacity: 0.7;
 }
 
 .boba-join-us-form .boba-join-us-form-row .wpcf7-form .file-show {
@@ -1675,10 +1709,14 @@ section.footer-widgets {
 .boba-join-us-form .boba-join-us-form-row .wpcf7-form .cover-letter-btn img.show-cover-letter-btn {
     margin-top: 30px;
     cursor: pointer;
+    width: 80%;
 }
-
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form .resume-btn img.show-resume-btn:hover,
+.boba-join-us-form .boba-join-us-form-row .wpcf7-form .cover-letter-btn img.show-cover-letter-btn:hover {
+    opacity: 0.7;
+}
 .boba-join-us-form-row .wpcf7 .message-input #message {
-    height: 186px;
+    height: 240px;
     padding: 30px;
 }
 
