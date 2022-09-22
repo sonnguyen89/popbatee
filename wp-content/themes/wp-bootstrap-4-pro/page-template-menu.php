@@ -203,67 +203,7 @@ $page_id = $post->ID;
                 </div>
             </div>
             <div class="row list-menu-item-2-row">
-                <div class="container-fluid p-5">
-                    <div class="row">
-                        <?php
-                        if (get_query_var('paged')) {
-                            $paged = get_query_var('paged');
-                        } else if (get_query_var('page')) {
-                            // This will occur if on front page.
-                            $paged = get_query_var('page');
-                        } else {
-                            $paged = 1;
-                        }
-                        $my_query = new WP_Query(array(
-                            'post_type' => 'menu_items',
-                            'posts_per_page' => 9,
-                            'paged' => $paged,
-                            'orderby' => 'id',
-                            'order' => 'ASC',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'groups',
-                                    'field' => 'slug',
-                                    'terms' => array('waffles'),
-                                )
-                            ),
-                        ));
-                        $total_pages = $my_query->max_num_pages;
-                        ?>
-                        <?php if (have_posts()) : ?>
-                            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="menu-item p-3">
-                                        <?php if (has_post_thumbnail()): ?>
-                                            <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
-                                            <div class="menu-item-image">
-                                                <img class="img-fluid" src="<?php echo $featured_img_url; ?>"/>
-                                            </div>
-                                        <?php endif; ?>
-                                        <div class="item-content w-75 ml-3 mt-3">
-                                            <h3><?php the_title(); ?></h3>
-                                            <p class="desc"><?php echo wp_strip_all_tags(get_the_content()); ?> </p>
-                                            <?php $price = get_field("price", get_the_ID()); ?>
-                                            <?php if (!empty($price)) : ?>
-                                                <p class="price">$<?php echo $price; ?> </p>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                        else: ?>
-                            <p>Nothing Found</p>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 justify-content-center">
-                    <!-- Specify justify-content-end to align to the right -->
-                    <?php bootstrap_pagination($my_query,true, array('prev_next' => false)); ?>
-                    <?php wp_reset_postdata(); ?>
-                </div>
+                <?php echo do_shortcode('[popbateepagination custom_post_type="menu_items" post_limit="6" cptataxname="groups" cptacatname="waffles"]'); ?>
             </div>
         </div>
     </section>
